@@ -139,3 +139,6 @@ begin
     
     select id, nomeAnimal, idadeAnimal, porteAnimal, sexoAnimal, especieAnimal, dResgate, nResgatante, statusAnimal;
 end;//
+
+
+INSERT INTO `t_admin`(`email`, `senha`) VALUES ('admin@admin','1234');

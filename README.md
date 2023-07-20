@@ -56,6 +56,17 @@ npm install
 npm run dev
 ```
 
+4. Para acessar as páginas entre com os dados na tela de login:
+
+- Login:
+  ```
+    admin@admin
+  ```
+- Senha:
+  ```
+    1234
+  ```
+
 ## Desenvolvedores
 
 - [Henrique Machado](https://www.linkedin.com/in/henrimachado/) - UI/UX Design
