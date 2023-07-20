@@ -79,16 +79,20 @@ const Tabela = ({ thead, url, filtrar, setFiltrar, campos }) => {
   }, [popUp]);
 
   function handleDelet(id) {
-    fetch(`${url}/${id}`, {
-      method: 'DELETE',
-    }).then(() => {
-      fetch(url)
-        .then((response) => response.json())
-        .then((json) => {
-          setData(json);
-          setRowData(json);
-        });
-    });
+    const confirmacao = window.confirm('Tem certeza que deseja excluir?');
+
+    if (confirmacao) {
+      fetch(`${url}/${id}`, {
+        method: 'DELETE',
+      }).then(() => {
+        fetch(url)
+          .then((response) => response.json())
+          .then((json) => {
+            setData(json);
+            setRowData(json);
+          });
+      });
+    }
   }
 
   let maxPag =
