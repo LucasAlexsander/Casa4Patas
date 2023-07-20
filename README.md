@@ -39,6 +39,30 @@ npm install
 npm run start
 ```
 
+### Uso de um banco como o WorkBench 8
+
+Caso contre um problema de conexão, utiliza o mysql2
+
+1. Dentro do terminal da API, insira o seguinte comando:
+
+```
+npm install mysql2
+```
+
+2. Após a conclusão da instalação, é necessário realizar alteração no arquivo Database.js (Database/Database.js).
+
+   Substitua a linha:
+
+   ```
+   const mysql = require('mysql');
+   ```
+
+   Altere por:
+
+   ```
+   const mysql = require('mysql2');
+   ```
+
 ## Iniciando a aplicação
 
 Com todos os passos anteriores já realizados, faça o seguite passo-a-passo:
